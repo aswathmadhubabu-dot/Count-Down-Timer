@@ -26,10 +26,10 @@ class Clock extends Component {
         const hours = Math.floor(result / (1000 * 60 * 60) % 24);
         const days = Math.floor(result / (1000 * 60 * 60 * 24));
         console.log(seconds + '*' + minutes + '*' + hours + '*' + days);
-        this.setState({ days: days, hours: hours, minutes: minutes, seconds: seconds });
+        this.setState({ days, hours, minutes,seconds});
     }
     render() {
-        this.getTimeUntil(this.props.deadline);
+        // this.getTimeUntil(this.props.deadline);
         return (
 
             <div className="col-md-12 container-fluid text-center">
