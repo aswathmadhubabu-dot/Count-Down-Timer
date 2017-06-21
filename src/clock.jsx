@@ -15,12 +15,14 @@ class Clock extends Component {
 
     }
     getTimeUntil(deadline) {
-        var d = new Date();
-        const result = Date.parse(deadline) - Date.parse(d.getDate());
+        
+        const result = Date.parse(deadline) - Date.parse(new Date());
         console.log(result);
     }
     render() {
+        this.getTimeUntil(this.props.deadline);
         return (
+            
             <div className="col-md-12 container-fluid text-center">
                 <div className="col-md-3 text-fluid" id="clockDays">{this.state.days}Days</div>
                 <div className="col-md-3 text-fluid" id="clockHours">{this.state.hours}Hours</div>
