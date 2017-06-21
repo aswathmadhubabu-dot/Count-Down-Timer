@@ -1,8 +1,8 @@
 /*
  * @Author: Aswath MadhuBabu 
  * @Date: 2017-06-21 14:35:15 
- * @Last Modified by:   Aswath MadhuBabu 
- * @Last Modified time: 2017-06-21 14:35:15 
+ * @Last Modified by: Aswath MadhuBabu
+ * @Last Modified time: 2017-06-21 14:43:53
  */
 
 import React, { Component } from 'react';
@@ -18,6 +18,7 @@ class Clock extends Component {
             minutes :0,
             seconds :0
         }
+        console.log(this.props);
     }
     render(){
         return(
