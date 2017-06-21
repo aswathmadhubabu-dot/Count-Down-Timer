@@ -18,7 +18,7 @@ class Clock extends Component {
             <div className="col-md-3 text-fluid" id="clockDays">{this.state.days}Days</div>
             <div className="col-md-3 text-fluid" id="clockHours">{this.state.hours}Hours</div>
             <div className="col-md-3 text-fluid" id="clockMinutes">{this.state.minutes}Minutes</div>
-            <div className="col-md-3 text-fluid" id="clockSeconds">Seconds</div>
+            <div className="col-md-3 text-fluid" id="clockSeconds">{this.state.seconds}Seconds</div>
             </div>
         )
     }
