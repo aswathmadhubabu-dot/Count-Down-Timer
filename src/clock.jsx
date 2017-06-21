@@ -18,6 +18,7 @@ class Clock extends Component {
         
         const result = Date.parse(deadline) - Date.parse(new Date());
         console.log(result);
+        console.log(result/(1000*60*60*24));
     }
     render() {
         this.getTimeUntil(this.props.deadline);
