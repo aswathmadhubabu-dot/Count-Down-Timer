@@ -1,3 +1,9 @@
+/*
+ * @Author: Aswath MadhuBabu 
+ * @Date: 2017-06-21 15:21:45 
+ * @Last Modified by:   Aswath MadhuBabu 
+ * @Last Modified time: 2017-06-21 15:21:45 
+ */
 
 import React, { Component } from 'react';
 import Clock from './clock'
