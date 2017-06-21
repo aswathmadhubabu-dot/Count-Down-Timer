@@ -13,6 +13,9 @@ class Clock extends Component {
             seconds :0
         }
         console.log(this.props.deadline);
+        var d = new Date();
+        const result = Date.parse(this.props.deadline)-Date.parse(d.getDate());
+        console.log(result);
     }
     render(){
         return(
