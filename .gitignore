@@ -4,7 +4,7 @@
  * @Last Modified by:   Aswath MadhuBabu 
  * @Last Modified time: 2017-06-21 15:22:07 
  */
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+
 
 # dependencies
 /node_modules

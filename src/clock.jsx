@@ -1,8 +1,8 @@
 /*
  * @Author: Aswath MadhuBabu 
  * @Date: 2017-06-21 15:21:49 
- * @Last Modified by:   Aswath MadhuBabu 
- * @Last Modified time: 2017-06-21 15:21:49 
+ * @Last Modified by: Aswath MadhuBabu
+ * @Last Modified time: 2017-06-21 15:33:57
  */
 
 import React, { Component } from 'react';
@@ -46,10 +46,10 @@ class Clock extends Component {
         return (
 
             <div className="col-md-12 container-fluid text-center">
-                <div className="col-md-3 text-fluid" id="clockDays">{this.state.days}Days</div>
-                <div className="col-md-3 text-fluid" id="clockHours">{this.state.hours}Hours</div>
-                <div className="col-md-3 text-fluid" id="clockMinutes">{this.state.minutes}Minutes</div>
-                <div className="col-md-3 text-fluid" id="clockSeconds">{this.state.seconds}Seconds</div>
+                <div className="col-md-3 text-fluid" id="clockDays">{ this.leading0(this.state.days)}Days</div>
+                <div className="col-md-3 text-fluid" id="clockHours">{ this.leading0(this.state.hours)}Hours</div>
+                <div className="col-md-3 text-fluid" id="clockMinutes">{this.leading0(this.state.minutes)}Minutes</div>
+                <div className="col-md-3 text-fluid" id="clockSeconds">{this.leading0(this.state.seconds)}Seconds</div>
             </div>
         )
     }
