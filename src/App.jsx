@@ -1,8 +1,8 @@
 /*
  * @Author: Aswath MadhuBabu 
  * @Date: 2017-06-21 15:21:45 
- * @Last Modified by:   Aswath MadhuBabu 
- * @Last Modified time: 2017-06-21 15:21:45 
+ * @Last Modified by: Aswath MadhuBabu
+ * @Last Modified time: 2017-06-21 16:13:17
  */
 
 import React, { Component } from 'react';
@@ -29,7 +29,7 @@ class App extends Component {
     return (<div className="container text-center text-fluid">  Countdown to {this.state.deadline} <Clock deadline={this.state.deadline}/>
 
             <div className="container-fluid text-center col-md-12">
-                <div className="col-md-12">  <input type="text" className="form-control" id="month" placeholder="NEW DATE &nbsp;&nbsp;&nbsp; Format :[Month Date Year]"onChange={event =>this.setState({newDeadline: event.target.value})} /></div>
+                <div className="col-md-12">  <input type="text" className="form-control view" id="month" placeholder="NEW DATE &nbsp;&nbsp;&nbsp; Format :[Month Date Year]"onChange={event =>this.setState({newDeadline: event.target.value})} /></div>
                 <button className="btn btn-info text-center well" onClick={() => this.changeDeadline()}>SUBMIT</button>
 
 
